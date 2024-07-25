@@ -13,8 +13,8 @@ public class TypeErrorExample {
 
 	public static void main(String[] args) {		
 		
-		// lo tuve que reconvertir a arreglo para acceder a los elementos ya que HashSet no permite acceder a sus elementos con []
-        System.out.println("The element in position 2: " +  g(5).toArray()[0].toString());
+		// ERROR: The type of the expression must be an array type but it resolved to HashSet<Integer>, SOLUCION: hay que reconvertir a arreglo para acceder a los elementos ya que HashSet no permite acceder a sus elementos con [], se soluciona así: g(5).toArray()[0].toString()
+        System.out.println("The element in position 2: " +  g(5)[0]);
 
 	}
 
