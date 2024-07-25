@@ -2,10 +2,13 @@ package helloworld;
 
 public class HelloWorld {
 	
-	
-	public static void main(String[] args)
+	// Without this method, the application won’t be runnable.
+	public static String main(String[] args)
     {
-        System.out.println("Hello World");
+		String res = "Hello world!";
+		System.out.println(res);
+		return res;
+
     }
 
 }
